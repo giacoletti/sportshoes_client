@@ -35,7 +35,7 @@ describe("A visitor navigating to the main application url", () => {
   describe("can see products display", () => {
     it("is expected to see product search field", () => {
       cy.get("[data-cy=product-search-field]")
-        .should("contain.text", "Search product...")
+        .should("have.attr", "placeholder", "Search product...")
         .and("be.visible");
     });
 
