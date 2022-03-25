@@ -1,19 +1,38 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import { Carousel, Button } from "react-bootstrap";
 
 const Slideshow = () => {
   return (
     <Carousel fade data-cy="slideshow">
       <Carousel.Item>
         <img
+          data-cy="slide-1-image"
           className="d-block w-100"
           src="images/sportshoes_slide_1.jpg"
           alt="first slide"
           height={"560px"}
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption
+          style={{ top: "60%", bottom: "auto", paddingLeft: "43px" }}
+        >
+          <div className="text-start mt-0">
+            <Button
+              data-cy="slide-1-button-1"
+              variant="light"
+              size="sm"
+              className="me-4 px-4"
+            >
+              BUY NOW
+            </Button>
+            <Button
+              data-cy="slide-1-button-2"
+              variant="outline-light"
+              size="sm"
+              className="px-4"
+            >
+              LEARN MORE
+            </Button>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -23,10 +42,6 @@ const Slideshow = () => {
           alt="second slide"
           height={"560px"}
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -35,12 +50,6 @@ const Slideshow = () => {
           alt="third slide"
           height={"560px"}
         />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
