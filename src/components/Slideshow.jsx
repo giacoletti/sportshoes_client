@@ -8,6 +8,7 @@ const Slideshow = () => {
         <img
           className="d-block w-100"
           src="images/sportshoes_slide_1.jpg"
+          alt="first slide"
           height={"560px"}
         />
         <Carousel.Caption>
@@ -19,6 +20,7 @@ const Slideshow = () => {
         <img
           className="d-block w-100"
           src="images/sportshoes_slide_2.jpg"
+          alt="second slide"
           height={"560px"}
         />
         <Carousel.Caption>
@@ -30,6 +32,7 @@ const Slideshow = () => {
         <img
           className="d-block w-100"
           src="images/sportshoes_slide_3.jpg"
+          alt="third slide"
           height={"560px"}
         />
         <Carousel.Caption>
