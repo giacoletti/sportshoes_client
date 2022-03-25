@@ -1,7 +1,12 @@
 import React from "react";
+import Slideshow from "./components/Slideshow";
 
 const App = () => {
-  return <h1 data-cy="welcome-header">Welcome to the app</h1>;
+  return (
+    <>
+      <Slideshow />
+    </>
+  );
 };
 
 export default App;
