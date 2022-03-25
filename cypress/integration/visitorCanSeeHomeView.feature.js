@@ -2,7 +2,7 @@ describe("A visitor navigating to the main application url", () => {
   before(() => {
     cy.intercept(
       "GET",
-      "https://webshop.wm3.se/api/v1/shop/products.json?media_file=true",
+      "https://webshop.wm3.se/api/v1/shop/products?media_file=true",
       {
         fixture: "productsIndexResponse"
       }
