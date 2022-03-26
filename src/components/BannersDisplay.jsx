@@ -12,14 +12,26 @@ const BannersDisplay = () => {
               src="images/sportshoes_banner_1.jpg"
               alt="footer banner image 1"
             />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+            <Card.ImgOverlay style={{ top: "auto", bottom: "5%" }}>
+              <Card.Title data-cy="banner-title-1">
+                FIGHT LIKE A SPIDER
+              </Card.Title>
+              <Card.Text
+                data-cy="banner-description-1"
+                style={{
+                  fontFamily: "Roboto, sans-serif",
+                  color: "grey"
+                }}
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                modi cum quisquam quaerat laboriosam reiciendis impedit placeat
+                rem temporibus!
               </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
+              <Card.Text data-cy="banner-link-1">
+                <a href="#" className="link-light">
+                  READ MORE
+                </a>
+              </Card.Text>
             </Card.ImgOverlay>
           </Card>
         </Col>
@@ -30,14 +42,26 @@ const BannersDisplay = () => {
               src="images/sportshoes_banner_2.jpg"
               alt="footer banner image 1"
             />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+            <Card.ImgOverlay style={{ top: "auto", bottom: "5%" }}>
+              <Card.Title data-cy="banner-title-2">
+                RUN LIKE A CHEETAH
+              </Card.Title>
+              <Card.Text
+                data-cy="banner-description-2"
+                style={{
+                  fontFamily: "Roboto, sans-serif",
+                  color: "grey"
+                }}
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                modi cum quisquam quaerat laboriosam reiciendis impedit placeat
+                rem temporibus!
               </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
+              <Card.Text data-cy="banner-link-2">
+                <a href="#" className="link-light">
+                  READ MORE
+                </a>
+              </Card.Text>
             </Card.ImgOverlay>
           </Card>
         </Col>

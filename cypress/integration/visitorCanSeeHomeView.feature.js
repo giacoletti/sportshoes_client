@@ -73,10 +73,34 @@ describe("A visitor navigating to the main application url", () => {
   describe("can see banners display", () => {
     it("is expected to see first banner", () => {
       cy.get("[data-cy=banner-image-1]").should("be.visible");
+      cy.get("[data-cy=banner-title-1]")
+        .should("contain.text", "FIGHT LIKE A SPIDER")
+        .and("be.visible");
+      cy.get("[data-cy=banner-description-1]")
+        .should(
+          "contain.text",
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque modi cum quisquam quaerat laboriosam reiciendis impedit placeat rem temporibus!"
+        )
+        .and("be.visible");
+      cy.get("[data-cy=banner-link-1]")
+        .should("contain.text", "READ MORE")
+        .and("be.visible");
     });
 
     it("is expected to see second banner", () => {
       cy.get("[data-cy=banner-image-2]").should("be.visible");
+      cy.get("[data-cy=banner-title-2]")
+        .should("contain.text", "RUN LIKE A CHEETAH")
+        .and("be.visible");
+      cy.get("[data-cy=banner-description-2]")
+        .should(
+          "contain.text",
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque modi cum quisquam quaerat laboriosam reiciendis impedit placeat rem temporibus!"
+        )
+        .and("be.visible");
+      cy.get("[data-cy=banner-link-2]")
+        .should("contain.text", "READ MORE")
+        .and("be.visible");
     });
   });
 });
