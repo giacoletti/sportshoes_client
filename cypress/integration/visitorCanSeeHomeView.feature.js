@@ -69,4 +69,14 @@ describe("A visitor navigating to the main application url", () => {
         .and("be.visible");
     });
   });
+
+  describe("can see banners display", () => {
+    it("is expected to see first banner", () => {
+      cy.get("[data-cy=banner-image-1]").should("be.visible");
+    });
+
+    it("is expected to see second banner", () => {
+      cy.get("[data-cy=banner-image-2]").should("be.visible");
+    });
+  });
 });
