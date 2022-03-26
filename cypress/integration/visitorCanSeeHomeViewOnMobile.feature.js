@@ -12,6 +12,6 @@ describe("A visitor navigating to the main application url", () => {
   });
 
   it("is expected to see responsive slideshow layout", () => {
-    cy.get("[data-cy=slideshow]").should("have.css", "height", "178.484375px");
+    cy.get("[data-cy=slideshow]").should("have.css", "height", "178.296875px");
   });
 });

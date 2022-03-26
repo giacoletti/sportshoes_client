@@ -38,11 +38,38 @@ describe("A visitor can search for products by typing a keyword in the search fi
           }
         }
       );
-      cy.get("[data-cy=product-search-field]").clear().type("oiuajdoisaj{enter}");
+      cy.get("[data-cy=product-search-field]")
+        .clear()
+        .type("oiuajdoisaj{enter}");
     });
 
     it("is expected to see an empty list", () => {
       cy.get("[data-cy=product-card-1]").should("not.exist");
+    });
+  });
+
+  describe("can see all products when the search field has been cleared and 'Enter' is pressed", () => {
+    before(() => {
+      cy.intercept(
+        "GET",
+        "https://webshop.wm3.se/api/v1/shop/products/search?q=&media_file=true",
+        {
+          fixture: "productsSearchWithEmptyQueryResponse"
+        }
+      );
+      cy.get("[data-cy=product-search-field]").clear().type("{enter}");
+    });
+
+    it("is expected to see first product card", () => {
+      cy.get("[data-cy=product-card-1]")
+        .should("contain.text", "Dame 3")
+        .and("be.visible");
+    });
+
+    it("is expected to see second product card", () => {
+      cy.get("[data-cy=product-card-2]")
+        .should("contain.text", "Flyknit Racer")
+        .and("be.visible");
     });
   });
 });
