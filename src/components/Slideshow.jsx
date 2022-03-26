@@ -31,13 +31,12 @@ const Slideshow = () => {
           alt="first slide"
         />
         <Carousel.Caption
-          style={{ top: "60%", bottom: "auto", paddingLeft: "2vw" }}
+          style={{ top: "62%", bottom: "auto", paddingLeft: "4vw" }}
         >
           <div className="text-start">
             <Button
               data-cy="slide-1-button-1"
               variant="light"
-              size="sm"
               className="me-4 px-4"
             >
               BUY NOW
@@ -45,7 +44,6 @@ const Slideshow = () => {
             <Button
               data-cy="slide-1-button-2"
               variant="outline-light"
-              size="sm"
               className="px-4"
             >
               LEARN MORE

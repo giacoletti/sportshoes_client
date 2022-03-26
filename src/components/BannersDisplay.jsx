@@ -33,7 +33,7 @@ const BannersDisplay = () => {
                 </Col>
               </Row>
               <Card.Text data-cy="banner-link-1">
-                <a href="#" className="link-light">
+                <a href="#top" className="link-light">
                   READ MORE
                 </a>
               </Card.Text>
@@ -68,7 +68,7 @@ const BannersDisplay = () => {
                 </Col>
               </Row>
               <Card.Text data-cy="banner-link-2">
-                <a href="#" className="link-light">
+                <a href="#top" className="link-light">
                   READ MORE
                 </a>
               </Card.Text>
