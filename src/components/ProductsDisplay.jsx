@@ -18,8 +18,8 @@ const ProductsDisplay = () => {
   const productsList = products.map((product, index) => {
     product.index = index + 1;
     return (
-      <Col xs={6} md={4}>
-        <ProductCard key={product.id} product={product} />
+      <Col key={product.id} xs={6} md={4}>
+        <ProductCard product={product} />
       </Col>
     );
   });
