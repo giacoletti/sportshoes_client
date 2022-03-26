@@ -6,8 +6,20 @@ const Slideshow = () => {
     <Carousel
       data-cy="slideshow"
       fade
-      nextIcon={<span aria-hidden="true" hidden className="carousel-control-next-icon" />}
-      prevIcon={<span aria-hidden="true" hidden className="carousel-control-next-icon" />}
+      nextIcon={
+        <span
+          aria-hidden="true"
+          hidden
+          className="carousel-control-next-icon"
+        />
+      }
+      prevIcon={
+        <span
+          aria-hidden="true"
+          hidden
+          className="carousel-control-next-icon"
+        />
+      }
       style={{ marginTop: "-56px", position: "relative", zIndex: 0 }}
     >
       <Carousel.Item>
@@ -18,9 +30,9 @@ const Slideshow = () => {
           alt="first slide"
         />
         <Carousel.Caption
-          style={{ top: "60%", bottom: "auto", paddingLeft: "43px" }}
+          style={{ top: "60%", bottom: "auto", paddingLeft: "2vw" }}
         >
-          <div className="text-start mt-0">
+          <div className="text-start">
             <Button
               data-cy="slide-1-button-1"
               variant="light"

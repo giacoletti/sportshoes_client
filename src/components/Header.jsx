@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 const Header = () => {
   return (
     <Navbar bg="transparent" style={{ position: "relative", zIndex: 10 }}>
-      <Container fluid>
+      <Container fluid style={{ paddingLeft: "2vw", paddingRight: "2vw" }}>
         <Navbar.Brand className="ms-3">
           <img
             data-cy="header-logo"
