@@ -17,17 +17,21 @@ const BannersDisplay = () => {
               <Card.Title data-cy="banner-title-1">
                 FIGHT LIKE A SPIDER
               </Card.Title>
-              <Card.Text
-                data-cy="banner-description-1"
-                style={{
-                  fontFamily: "Roboto, sans-serif",
-                  color: "grey"
-                }}
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                modi cum quisquam quaerat laboriosam reiciendis impedit placeat
-                rem temporibus!
-              </Card.Text>
+              <Row>
+                <Col xs="12" lg="7">
+                  <Card.Text
+                    data-cy="banner-description-1"
+                    style={{
+                      fontFamily: "Roboto, sans-serif",
+                      color: "grey"
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eaque modi cum quisquam quaerat laboriosam reiciendis
+                    impedit placeat rem temporibus!
+                  </Card.Text>
+                </Col>
+              </Row>
               <Card.Text data-cy="banner-link-1">
                 <a href="#" className="link-light">
                   READ MORE
@@ -48,17 +52,21 @@ const BannersDisplay = () => {
               <Card.Title data-cy="banner-title-2">
                 RUN LIKE A CHEETAH
               </Card.Title>
-              <Card.Text
-                data-cy="banner-description-2"
-                style={{
-                  fontFamily: "Roboto, sans-serif",
-                  color: "grey"
-                }}
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                modi cum quisquam quaerat laboriosam reiciendis impedit placeat
-                rem temporibus!
-              </Card.Text>
+              <Row>
+                <Col xs="12" lg="7">
+                  <Card.Text
+                    data-cy="banner-description-2"
+                    style={{
+                      fontFamily: "Roboto, sans-serif",
+                      color: "grey"
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eaque modi cum quisquam quaerat laboriosam reiciendis
+                    impedit placeat rem temporibus!
+                  </Card.Text>
+                </Col>
+              </Row>
               <Card.Text data-cy="banner-link-2">
                 <a href="#" className="link-light">
                   READ MORE
