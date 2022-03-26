@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "id": 28944,
+      "name": "Jordan Ultra Fly",
+      "sku": "12002",
+      "reference": "12002 - Jordan Ultra Fly",
+      "url": "jordan-ultra-fly",
+      "variant_id": 76587,
+      "product_image": {
+        "id": 84764,
+        "fileable_type": "product",
+        "product_id": 28944,
+        "variant_id": null,
+        "presentation": { "sv": "" },
+        "position": 1,
+        "media_file_id": 124925,
+        "options": null,
+        "url": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124925_original_28-nike-hyperdunk-2016-elite-4.png?1486647060"
+      },
+      "published_content": {
+        "sv": {
+          "table": {
+            "name": "Jordan Ultra Fly",
+            "description": "",
+            "short_description": ""
+          }
+        }
+      },
+      "country_affinity": {},
+      "product_relations": [],
+      "product_properties": [],
+      "media_file": {
+        "id": 124925,
+        "name": "28-nike-hyperdunk-2016-elite-4.png",
+        "display_name": "28 Nike Hyperdunk 2016 Elite 4",
+        "url": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124925_original_28-nike-hyperdunk-2016-elite-4.png?1486647060",
+        "content_type": "image/png",
+        "url_small": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124925_small_28-nike-hyperdunk-2016-elite-4.png?1486647060",
+        "url_medium": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124925_medium_28-nike-hyperdunk-2016-elite-4.png?1486647060",
+        "url_large": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124925_large_28-nike-hyperdunk-2016-elite-4.png?1486647060"
+      }
+    },
+    {
+      "id": 28946,
+      "name": "Jordan Ultra Fly",
+      "sku": "12004",
+      "reference": "12004 - Jordan Ultra Fly",
+      "url": "jordan-ultra-fly-w",
+      "variant_id": 76589,
+      "product_image": {
+        "id": 84766,
+        "fileable_type": "product",
+        "product_id": 28946,
+        "variant_id": null,
+        "presentation": { "sv": "" },
+        "position": 1,
+        "media_file_id": 124921,
+        "options": null,
+        "url": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124921_original_JORDAN_ULTRA_FLY-BLACK_REFLECT_SILVER_HYPR_TURQ-1.png?1486647059"
+      },
+      "published_content": {
+        "sv": {
+          "table": {
+            "name": "Jordan Ultra Fly",
+            "description": "",
+            "short_description": ""
+          }
+        }
+      },
+      "country_affinity": {},
+      "product_relations": [],
+      "product_properties": [],
+      "media_file": {
+        "id": 124921,
+        "name": "JORDAN_ULTRA_FLY-BLACK_REFLECT_SILVER_HYPR_TURQ-1.png",
+        "display_name": "Jordan Ultra Fly Black Reflect Silver Hypr Turq 1",
+        "url": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124921_original_JORDAN_ULTRA_FLY-BLACK_REFLECT_SILVER_HYPR_TURQ-1.png?1486647059",
+        "content_type": "image/png",
+        "url_small": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124921_small_JORDAN_ULTRA_FLY-BLACK_REFLECT_SILVER_HYPR_TURQ-1.png?1486647059",
+        "url_medium": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124921_medium_JORDAN_ULTRA_FLY-BLACK_REFLECT_SILVER_HYPR_TURQ-1.png?1486647059",
+        "url_large": "https://s3-eu-west-1.amazonaws.com/static.wm3.se/sites/384/media/124921_large_JORDAN_ULTRA_FLY-BLACK_REFLECT_SILVER_HYPR_TURQ-1.png?1486647059"
+      }
+    }
+  ]
+}
