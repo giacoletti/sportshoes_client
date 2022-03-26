@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
         <Card.Title
           style={{
             marginTop: "90%",
-            fontSize: "0.9rem",
+            fontSize: "1rem",
             textTransform: "uppercase"
           }}
         >
