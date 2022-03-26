@@ -20,4 +20,10 @@ describe("A visitor can search for products by typing a keyword in the search fi
       .should("contain.text", "Jordan Ultra Fly")
       .and("be.visible");
   });
+
+  it("is expected to see second product result", () => {
+    cy.get("[data-cy=product-card-2]")
+      .should("contain.text", "Jordan Ultra Fly")
+      .and("be.visible");
+  });
 });
