@@ -1,4 +1,4 @@
-describe("A visitor navigating to the main application url", () => {
+describe("A visitor navigating to the main application url on an iPhone 8", () => {
   before(() => {
     cy.intercept(
       "GET",
