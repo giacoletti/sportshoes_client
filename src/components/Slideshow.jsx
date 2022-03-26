@@ -6,6 +6,7 @@ const Slideshow = () => {
     <Carousel
       data-cy="slideshow"
       fade
+      indicators={window.screen.width < 500 ? false : true}
       nextIcon={
         <span
           aria-hidden="true"
