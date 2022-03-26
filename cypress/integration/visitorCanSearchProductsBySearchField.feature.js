@@ -26,4 +26,23 @@ describe("A visitor can search for products by typing a keyword in the search fi
       .should("contain.text", "Jordan Ultra Fly")
       .and("be.visible");
   });
+
+  describe("can see an empty products list when there are no search results", () => {
+    before(() => {
+      cy.intercept(
+        "GET",
+        "https://webshop.wm3.se/api/v1/shop/products/search?q=oiuajdoisaj&media_file=true",
+        {
+          body: {
+            products: []
+          }
+        }
+      );
+      cy.get("[data-cy=product-search-field]").clear().type("oiuajdoisaj{enter}");
+    });
+
+    it("is expected to see an empty list", () => {
+      cy.get("[data-cy=product-card-1]").should("not.exist");
+    });
+  });
 });
