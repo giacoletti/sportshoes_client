@@ -14,6 +14,24 @@ describe("A visitor navigating to the main application url", () => {
     cy.get("[data-cy=slideshow]").should("be.visible");
   });
 
+  describe("can see header", () => {
+    it("is expected to see logo", () => {
+      cy.get("[data-cy=header-logo]").should("be.visible");
+    });
+
+    it("is expected to see 'MEN' button link", () => {
+      cy.get("[data-cy=header-men-btn]")
+        .should("contain.text", "MEN")
+        .and("be.visible");
+    });
+
+    it("is expected to see 'WOMEN' button link", () => {
+      cy.get("[data-cy=header-women-btn]")
+        .should("contain.text", "WOMEN")
+        .and("be.visible");
+    });
+  });
+
   describe("can see first slide", () => {
     it("is expected to see first image", () => {
       cy.get("[data-cy=slide-1-image]").should("be.visible");

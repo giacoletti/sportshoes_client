@@ -3,7 +3,11 @@ import { Carousel, Button } from "react-bootstrap";
 
 const Slideshow = () => {
   return (
-    <Carousel fade data-cy="slideshow">
+    <Carousel
+      fade
+      data-cy="slideshow"
+      style={{ marginTop: "-56px", position: "relative", zIndex: 0 }}
+    >
       <Carousel.Item>
         <img
           data-cy="slide-1-image"
