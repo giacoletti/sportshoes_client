@@ -39,3 +39,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `yarn cypress`
 
 Runs the app with [Cypress](https://www.cypress.io/), the next generation front end testing tool built for the modern web. We address the key pain points developers and QA engineers face when testing modern applications.
+
+## Development notes
+
+- I had to cut the first and second slide of the slideshow/carousel to make it flush at the bottom. An alternative would have been squeezing the height to make them flush, but it would have distorted the images.
+- I was not able to retrieve the right Google Font from the .psd file provided. I have 'Krita' on my Linux computer, which is an open-source graphics editor kinda like Photoshop, but I'm not very familiar with it. As a result I've choosen Google Fonts that were a close match.
