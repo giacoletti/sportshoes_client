@@ -37,7 +37,8 @@ const Slideshow = () => {
             <Button
               data-cy="slide-1-button-1"
               variant="light"
-              className="me-4 px-4"
+              className="px-4"
+              style={{ marginRight: "1.4vw" }}
             >
               BUY NOW
             </Button>
