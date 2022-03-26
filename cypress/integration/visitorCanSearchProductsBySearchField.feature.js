@@ -2,6 +2,10 @@ describe("A visitor can search for products by typing a keyword in the search fi
   before(() => {
     cy.intercept(
       "GET",
+      "https://webshop.wm3.se/api/v1/shop/products?media_file=true"
+    );
+    cy.intercept(
+      "GET",
       "https://webshop.wm3.se/api/v1/shop/products/search?q=jordan&media_file=true",
       {
         fixture: "productsSearchResponse"
