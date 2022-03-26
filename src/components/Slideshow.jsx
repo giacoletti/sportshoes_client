@@ -4,8 +4,10 @@ import { Carousel, Button } from "react-bootstrap";
 const Slideshow = () => {
   return (
     <Carousel
-      fade
       data-cy="slideshow"
+      fade
+      nextIcon={<span aria-hidden="true" hidden className="carousel-control-next-icon" />}
+      prevIcon={<span aria-hidden="true" hidden className="carousel-control-next-icon" />}
       style={{ marginTop: "-56px", position: "relative", zIndex: 0 }}
     >
       <Carousel.Item>
