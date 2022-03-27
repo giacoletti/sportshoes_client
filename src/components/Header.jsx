@@ -11,7 +11,7 @@ const Header = () => {
             alt="sportshoes logo"
             src="images/sportshoes_logo.png"
             height="20vw"
-            className="d-inline-block align-top"
+            className="d-inline-block"
           />
         </Navbar.Brand>
         <Nav className="">
