@@ -2,7 +2,8 @@ describe("A visitor can search for products by typing a keyword in the search fi
   before(() => {
     cy.intercept(
       "GET",
-      "https://webshop.wm3.se/api/v1/shop/products?media_file=true"
+      "https://webshop.wm3.se/api/v1/shop/products?media_file=true",
+      { body: { products: [] } }
     );
     cy.intercept(
       "GET",

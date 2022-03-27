@@ -2,7 +2,8 @@ describe("A visitor can change slide of the slideshow by clicking indicator butt
   before(() => {
     cy.intercept(
       "GET",
-      "https://webshop.wm3.se/api/v1/shop/products?media_file=true"
+      "https://webshop.wm3.se/api/v1/shop/products?media_file=true",
+      { body: { products: [] } }
     );
     cy.visit("/");
     cy.get("[aria-label='Slide 2']").click();
