@@ -46,3 +46,4 @@ Runs the app with [Cypress](https://www.cypress.io/), the next generation front 
 - I was not able to retrieve the right Google Font from the .psd file provided. I have 'Krita' on my Linux computer, which is an open-source graphics editor kinda like Photoshop, but I'm not very familiar with it. As a result I've choosen Google Fonts that were a close match.
 - I have applied a 'fade' effect to the slideshow. I think it's nicer than the classic sliding, but this should be discussed with the team/product owner.
 - When running the application on localhost, on Google Chrome browser, the font size appears smaller compared to the Cypress test runner. When running on localhost on Mozilla Firefox, the font size appears the same as it is on Cypress.
+- In the current state, the banners at the bottom of the view have a clickable link "READ MORE". I may have misunderstood the instructions, to make the whole banner clickable I can add a "onClick" event to them.
