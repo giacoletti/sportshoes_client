@@ -10,10 +10,6 @@ describe("A visitor navigating to the main application url", () => {
     cy.visit("/");
   });
 
-  it("is expected to see slideshow", () => {
-    cy.get("[data-cy=slideshow]").should("be.visible");
-  });
-
   describe("can see header", () => {
     it("is expected to see logo", () => {
       cy.get("[data-cy=header-logo]").should("be.visible");
@@ -32,7 +28,11 @@ describe("A visitor navigating to the main application url", () => {
     });
   });
 
-  describe("can see first slide", () => {
+  describe("can see slideshow", () => {
+    it("is expected to see slideshow", () => {
+      cy.get("[data-cy=slideshow]").should("be.visible");
+    });
+
     it("is expected to see first image", () => {
       cy.get("[data-cy=slide-1-image]").should("be.visible");
     });
@@ -47,6 +47,13 @@ describe("A visitor navigating to the main application url", () => {
       cy.get("[data-cy=slide-1-button-2]")
         .should("contain.text", "LEARN MORE")
         .and("be.visible");
+    });
+
+    it("is expected to not see slideshow controls", () => {
+      cy.get("[data-cy=slideshow]").within(() => {
+        cy.get(".carousel-control-prev-icon").should("not.exist");
+        cy.get(".carousel-control-next-icon").should("not.exist");
+      });
     });
   });
 

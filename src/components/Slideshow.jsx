@@ -6,21 +6,8 @@ const Slideshow = () => {
     <Carousel
       data-cy="slideshow"
       fade
-      indicators={window.screen.width < 500 ? false : true}
-      nextIcon={
-        <span
-          aria-hidden="true"
-          hidden
-          className="carousel-control-next-icon"
-        />
-      }
-      prevIcon={
-        <span
-          aria-hidden="true"
-          hidden
-          className="carousel-control-next-icon"
-        />
-      }
+      indicators={window.innerWidth < 500 ? false : true}
+      controls={false}
       style={{ marginTop: "-56px", position: "relative", zIndex: 0 }}
     >
       <Carousel.Item>
