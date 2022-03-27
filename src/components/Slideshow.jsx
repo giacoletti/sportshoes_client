@@ -41,6 +41,7 @@ const Slideshow = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
+          data-cy="slide-2-image"
           className="d-block w-100"
           src="images/sportshoes_slide_2.jpg"
           alt="second slide"
@@ -48,6 +49,7 @@ const Slideshow = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
+          data-cy="slide-3-image"
           className="d-block w-100"
           src="images/sportshoes_slide_3.jpg"
           alt="third slide"
