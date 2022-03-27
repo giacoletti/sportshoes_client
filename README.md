@@ -47,3 +47,4 @@ Runs the app with [Cypress](https://www.cypress.io/), the next generation front 
 - I have applied a 'fade' effect to the slideshow. I think it's nicer than the classic sliding, but this should be discussed with the team/product owner.
 - When running the application on localhost, on Google Chrome browser, the font size appears smaller compared to the Cypress test runner. When running on localhost on Mozilla Firefox, the font size appears the same as it is on Cypress.
 - In the current state, the banners at the bottom of the view have a clickable link "READ MORE". I may have misunderstood the instructions, to make the whole banner clickable I can add a "onClick" event to them.
+- I was not able to reproduce the slideshow indicator dots identically to the demo picture provided. I made them as similar as I could.
