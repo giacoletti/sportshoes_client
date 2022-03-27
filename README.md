@@ -45,7 +45,6 @@ Runs the app with [Cypress](https://www.cypress.io/), the next generation front 
 - I had to cut the first and second slide of the slideshow/carousel to make it flush at the bottom. An alternative would have been squeezing the height to make them flush, but it would have distorted the images.
 - I was not able to retrieve the right Google Font from the .psd file provided. I have 'Krita' on my Linux computer, which is an open-source graphics editor kinda like Photoshop, but I'm not very familiar with it. As a result I've choosen Google Fonts that were a close match.
 - I have applied a 'fade' effect to the slideshow. I think it's nicer than the classic sliding, but this should be discussed with the team/product owner.
-- When running the application on localhost, on Google Chrome browser, the font size appears smaller compared to the Cypress test runner. When running on localhost on Mozilla Firefox, the font size appears the same as it is on Cypress.
 - In the current state, the banners at the bottom of the view have a clickable link "READ MORE". I may have misunderstood the instructions, to make the whole banner clickable I can add a "onClick" event to them.
 - I was not able to reproduce the slideshow indicator dots identically to the demo picture provided. I made them as similar as I could.
 - I have added an end2end test that checks if the slideshow scrolls automatically every 5 seconds. The whole test adds 15 seconds to the total Cypress testing time. Needs to discuss if it's gonna be a problem or not (For example in a Continuous Integration setup).
