@@ -49,3 +49,4 @@ Runs the app with [Cypress](https://www.cypress.io/), the next generation front 
 - In the current state, the banners at the bottom of the view have a clickable link "READ MORE". I may have misunderstood the instructions, to make the whole banner clickable I can add a "onClick" event to them.
 - I was not able to reproduce the slideshow indicator dots identically to the demo picture provided. I made them as similar as I could.
 - I have added an end2end test that checks if the slideshow scrolls automatically every 5 seconds. The whole test adds 15 seconds to the total Cypress testing time. Needs to discuss if it's gonna be a problem or not (For example in a Continuous Integration setup).
+- When I try to write a component test for /src/components/ProductsDisplay.jsx, I get errors I'm not very familiar with. I have left the component test in its folder, marked as 'skipped' by the test runner.
