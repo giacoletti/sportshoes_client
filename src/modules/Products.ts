@@ -11,7 +11,7 @@ const Products = {
       return error;
     }
   },
-  async search(query) {
+  async search(query: string) {
     try {
       const { data } = await api.get("/products/search", {
         params: { q: query, media_file: true }
