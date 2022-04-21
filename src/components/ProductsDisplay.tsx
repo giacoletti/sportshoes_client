@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Products from "../modules/Products";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "./ProductCard";
 import { Form, Container, Row, Col } from "react-bootstrap";
+import { Product } from "../../types";
 
-const ProductsDisplay = () => {
+interface ProductListItem extends Product {
+  index: number;
+}
+
+const ProductsDisplay: React.FC = () => {
   const [products, setProducts] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
@@ -16,18 +21,18 @@ const ProductsDisplay = () => {
     fetchProducts();
   }, []);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(e.target.value);
   };
 
-  const handleEnter = async (e) => {
-    if (e.keyCode === 13) {
+  const handleEnter = async (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.code === "Enter") {
       const response = await Products.search(searchInput);
       response.products && setProducts(response.products);
     }
   };
 
-  const productsList = products.map((product, index) => {
+  const productsList = products.map((product: ProductListItem, index) => {
     product.index = index + 1;
     return (
       <Col key={product.id} xs={6} md={4}>
