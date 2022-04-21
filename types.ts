@@ -1,3 +1,7 @@
+export interface ProductListItem extends Product {  // Interface used for front-end only
+  index: number;
+}
+
 export interface Product {
   id:                 number;
   name:               string;

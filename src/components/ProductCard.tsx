@@ -1,7 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { ProductListItem } from "../../types";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product }: { product: ProductListItem }) => {
   return (
     <Card data-cy={`product-card-${product.index}`} style={{ height: "100%" }}>
       <Card.Img

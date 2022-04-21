@@ -2,13 +2,9 @@ import React, { useEffect, useState } from "react";
 import Products from "../modules/Products";
 import ProductCard from "./ProductCard";
 import { Form, Container, Row, Col } from "react-bootstrap";
-import { Product } from "../../types";
+import { ProductListItem } from "../../types";
 
-interface ProductListItem extends Product {
-  index: number;
-}
-
-const ProductsDisplay: React.FC = () => {
+const ProductsDisplay = () => {
   const [products, setProducts] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
